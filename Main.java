@@ -1,16 +1,16 @@
 import java.util.*;
 
-public class Assignment_1 {
+public class Main {
     public static void main(String[] args) {
 
         Scanner s = new Scanner(System.in);
 
         Complex z0 = new Complex();
-        z0.input();
+        z0.input(1);
         z0.output();
 
         Complex z1 = new Complex();
-        z1.input();
+        z1.input(2);
         z1.output();
 
         Complex z2 = new Complex();
@@ -22,6 +22,7 @@ public class Assignment_1 {
             System.out.println("2 For Subtraction");
             System.out.println("3 For Multiplication ");
             System.out.println("4 For Division");
+            System.out.println("5 For New Input");
             int a = s.nextInt();
             if(a==1){
                 z2 = z2.add(z1,z0);
@@ -39,6 +40,11 @@ public class Assignment_1 {
                 z2 = z2.divide(z0,z1);
                 System.out.print("Division  of ");
                 z2.output();
+            }else if(a==5){
+                z1 = z1.newinp();
+                z1.output();
+                z0 = z0.newinp();
+                z0.output();
             }else{
                 System.out.println("You entered wrong number :) ");
             }
