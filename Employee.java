@@ -4,6 +4,7 @@ public class Employee extends Salary_calculator {
     public
     String name,add,id,mailid,desi;
     double salary;
+    double dsala;
     long mono;
     Employee(){
         name="";
@@ -13,8 +14,6 @@ public class Employee extends Salary_calculator {
         desi="";
         salary=0;
         mono=0;
-
-
     }
     Scanner s = new Scanner(System.in);
 
@@ -31,13 +30,20 @@ public class Employee extends Salary_calculator {
         id = s.next();
         System.out.println("Enter mobile number of employee -> ");
         mono = s.nextLong();
-        System.out.println("Enter basic pay of employee -> ");
-        salary=s.nextDouble();
-        salary =  setsalary(salary);
-        System.out.println("Enter designation of employee -> ");
-        desi = s.next();
+
+        System.out.println("Enter 1 if employee is Team lead ");
+        System.out.println("Enter 2 if employee is Asst. manager ");
+        System.out.println("Enter 3 if employee is Programmer ");
+        dsala = s.nextInt();
+        dsala = givebp(givedsala());
+        salary = setsalary(givedsala());
+
+//        System.out.println("Enter basic pay of employee -> ");
+//        salary=s.nextDouble();
+//        salary =  setsalary(salary);
 
     }
+    double givedsala(){return dsala;}
     String givedesi(){
         return desi;
     }
@@ -51,6 +57,17 @@ public class Employee extends Salary_calculator {
     void dipsalary(){
         System.out.println("salary -> "+salary);
     }
-
+    boolean checkid(String s){
+        return false;
+    }
+    double givebp(double n){
+        if(n==1){
+            return 3000000;
+        }else if (n==2){
+            return 2000000;
+        }else if(n==3){
+            return 1000000;
+        }else{return 0;}
+    }
 
 }
