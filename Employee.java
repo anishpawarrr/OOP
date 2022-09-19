@@ -30,7 +30,10 @@ public class Employee extends Salary_calculator {
         id = s.next();
         System.out.println("Enter mobile number of employee -> ");
         mono = s.nextLong();
-
+        While(mono.length()!=10){
+            System.out.println("Enter valid mobile number of employee -> ");
+            mono = s.nextLong();
+        }
         System.out.println("Enter 1 if employee is Team lead ");
         System.out.println("Enter 2 if employee is Asst. manager ");
         System.out.println("Enter 3 if employee is Programmer ");
