@@ -1,0 +1,83 @@
+/home/blab-06/.jdks/openjdk-18.0.2.1/bin/java -javaagent:/home/blab-06/Downloads/ideaIC-2022.2.1/idea-IC-222.3739.54/lib/idea_rt.jar=40393:/home/blab-06/Downloads/ideaIC-2022.2.1/idea-IC-222.3739.54/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath /home/blab-06/Desktop/_23160/out/production/_23160 Assignment_2
+How many employees' details do you want to enter ? 
+3
+Enter details of employee number 1
+Enter name of employee -> 
+asdfg
+Enter address of employee -> 
+zxcv
+Enter mail id of employee -> 
+qwert@asd.com
+Enter id of employee -> 
+TL01
+Enter mobile number of employee -> 
+9876543210
+Enter 1 if employee is Team lead 
+Enter 2 if employee is Asst. manager 
+Enter 3 if employee is Programmer 
+1
+Enter details of employee number 2
+Enter name of employee -> 
+shjg
+Enter address of employee -> 
+dfgjfgfg
+Enter mail id of employee -> 
+erghj@xcgui.com
+Enter id of employee -> 
+TL01
+Enter mobile number of employee -> 
+8765434554
+Enter 1 if employee is Team lead 
+Enter 2 if employee is Asst. manager 
+Enter 3 if employee is Programmer 
+1
+You entered something wrong enter employee number 2's detail once again
+Enter name of employee -> 
+agfghfg
+Enter address of employee -> 
+fguyifr
+Enter mail id of employee -> 
+jfgjfjfgj@hdj.com
+Enter id of employee -> 
+765432
+Enter mobile number of employee -> 
+1234567898
+Enter 1 if employee is Team lead 
+Enter 2 if employee is Asst. manager 
+Enter 3 if employee is Programmer 
+2
+Enter details of employee number 3
+Enter name of employee -> 
+dhdfjgh
+Enter address of employee -> 
+fghfgjhd
+Enter mail id of employee -> 
+fdhfhfgjhd@fhdhdfg.com
+Enter id of employee -> 
+8765445
+Enter mobile number of employee -> 
+1234598766
+Enter 1 if employee is Team lead 
+Enter 2 if employee is Asst. manager 
+Enter 3 if employee is Programmer 
+3
+Name of employee -> asdfg
+Address of employee -> zxcv
+Mail id of employee -> qwert@asd.com
+Id of employee -> TL01
+Mobile number of employee -> 9876543210
+salary -> 2907000.0
+Name of employee -> agfghfg
+Address of employee -> fguyifr
+Mail id of employee -> jfgjfjfgj@hdj.com
+Id of employee -> 765432
+Mobile number of employee -> 1234567898
+salary -> 1938000.0
+Name of employee -> dhdfjgh
+Address of employee -> fghfgjhd
+Mail id of employee -> fdhfhfgjhd@fhdhdfg.com
+Id of employee -> 8765445
+Mobile number of employee -> 1234598766
+salary -> 969000.0
+
+Process finished with exit code 0
