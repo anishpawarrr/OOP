@@ -1,0 +1,51 @@
+/home/blab-06/.jdks/openjdk-18.0.2.1/bin/java -javaagent:/home/blab-06/Downloads/ideaIC-2022.2.1/idea-IC-222.3739.54/lib/idea_rt.jar=33005:/home/blab-06/Downloads/ideaIC-2022.2.1/idea-IC-222.3739.54/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath /home/blab-06/Desktop/_23160/out/production/_23160 Assignment_4
+Enter 
+1 to calculate area of triangle
+2 to calculate area of rectangle
+3456
+Enter valid number 
+1
+Enter 
+1 if you know base and height 
+2 if you know sides of triangle
+1
+Enter base of triangle 
+2
+Enter height of triangle 
+2
+Area of triangle is -> 2.0
+
+Process finished with exit code 0
+
+/home/blab-06/.jdks/openjdk-18.0.2.1/bin/java -javaagent:/home/blab-06/Downloads/ideaIC-2022.2.1/idea-IC-222.3739.54/lib/idea_rt.jar=45643:/home/blab-06/Downloads/ideaIC-2022.2.1/idea-IC-222.3739.54/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath /home/blab-06/Desktop/_23160/out/production/_23160 Assignment_4
+Enter 
+1 to calculate area of triangle
+2 to calculate area of rectangle
+1
+Enter 
+1 if you know base and height 
+2 if you know sides of triangle
+2
+Enter length of 1st side of triangle 
+
+2
+Enter length of 2nd side of triangle 
+2
+Enter length of 3rd side of triangle 
+2
+Area of triangle is -> 1.7320508075688772
+
+Process finished with exit code 0
+
+/home/blab-06/.jdks/openjdk-18.0.2.1/bin/java -javaagent:/home/blab-06/Downloads/ideaIC-2022.2.1/idea-IC-222.3739.54/lib/idea_rt.jar=43815:/home/blab-06/Downloads/ideaIC-2022.2.1/idea-IC-222.3739.54/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath /home/blab-06/Desktop/_23160/out/production/_23160 Assignment_4
+Enter 
+1 to calculate area of triangle
+2 to calculate area of rectangle
+2
+Enter breadth of rectangle 
+2
+Enter length of rectangle 
+2
+Area of rectangle is -> 4.0
+
+Process finished with exit code 0
