@@ -21,11 +21,11 @@ public class Assignment_7 {
 }
 class Gen <T>{
     Scanner s = new Scanner(System.in);
-    ArrayList<T> list = new ArrayList<T>();
+    ArrayList<T> list = new ArrayList<>();
 }
 class intlis extends Gen<Integer>{
     int pc=0,ec=0,oc=0;
-    Gen<Integer> intl = new Gen<Integer>();
+    Gen<Integer> intl = new Gen<>();
     void inp(int n){
         int t;
         for(int i=0;i<n;i++){
@@ -38,7 +38,6 @@ class intlis extends Gen<Integer>{
     void setcount(){
         int d = 0;
         for(int i=0;i<intl.list.size();i++){
-            int c = intl.list.get(i);
             if( intl.list.get(i) %2 == 0){
                 ec+=1;
                 if(intl.list.get(i)==2){
@@ -70,7 +69,7 @@ class intlis extends Gen<Integer>{
 }
 
 class strl extends Gen<String>{
-    Gen<String> st = new Gen<String>();
+    Gen<String> st = new Gen<>();
     int palc=0;
 
     void stinp(int n){
@@ -83,35 +82,33 @@ class strl extends Gen<String>{
     }
     void setco(){
         for(int i=0;i<st.list.size();i++){
-            if(ispale(st.list.get(i))){
+            if(recpali(st.list.get(i),0,st.list.get(i).length()-1)){
                 palc++;
             }
         }
     }
-    boolean ispale(String s){
-        int i = s.length()-1;
-        int j = 0;
-        while(i>=j){
-            if(s.charAt(i) != s.charAt(j)){
-                return false;
-            }
-            i--;
-            j++;
-        }
-        return true;
-    }
+//    boolean ispale(String s){
+//        int i = s.length()-1;
+//        int j = 0;
+//        while(i>=j){
+//            if(s.charAt(i) != s.charAt(j)){
+//                return false;
+//            }
+//            i--;
+//            j++;
+//        }
+//        return true;
+//    }
 
-    boolean recipale(String s,int f, int l){
-        int i=f, j = l-1;
-        if(i>=j){
+    boolean recpali(String s, int f, int l){
+        if(f>=l){
             return true;
         }
-        if(s.charAt(i)==s.charAt(j)){
-            recipale(s,i+1,j-1);
+        if(s.charAt(f) == s.charAt(l)){
+            return recpali(s,f+1,l-1);
         }else{
             return false;
         }
-        return false;
     }
 
     void dis(){
