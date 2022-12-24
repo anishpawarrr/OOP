@@ -3,8 +3,15 @@ import java.util.Scanner;
 class prac2{
     public static void main(String[] args) {
         book b = new book();
-        b.ordercopies();
-        System.out.println(b.price);
+        int d = 1;
+        Scanner s = new Scanner(System.in);
+        while(d==1){
+            b.ordercopies();
+            System.out.println("Enter 1 to continue or 0 to exit");
+            d = s.nextInt();
+        }
+
+        System.out.println("Amount to be paid -> "+b.price);
     }
 
     public static class publication{
@@ -57,21 +64,42 @@ class prac2{
             }
         }
         int ordercopies(){
-            Scanner s = new Scanner(System.in);
-            ddisplay();
-            int d;
-            System.out.println("Enter index number of the book you want to buy");
-            d = s.nextInt();
-            d = d-1;
-            System.out.println("Enter number of copies you want to buy");
-            copy = s.nextInt();
-            price += salecopy(bpric[d],copy);
-            return 0;
+            try{
+                Scanner s = new Scanner(System.in);
+                display();
+                int d;
+                System.out.println("Enter index number of the book you want to buy");
+                d = s.nextInt();
+                d = d-1;
+                System.out.println("Enter number of copies you want to buy");
+                copy = s.nextInt();
+                price += salecopy(bpric[d],copy);
+                return 1;
+            }catch(Exception e){
+                System.out.println(e);
+                return 0;
+            }
         }
     }   
     
     public static class magazine extends publication{
+        magazine(){
+            title = "";
+            copy = 0;
+            price = 0;
+        }
+        String []issues = new String[3];
+        int []mprice = new int[3];
+        void display(magazine m){
+            System.out.println("Title ->"+ m.title);
+            System.out.println("Price ->"+m.price);
+        }
         int orderquantity(){
+            try{
+                
+            }catch(Exception e){
+
+            }
             return 0;
         }
         String currentissue(int i){
