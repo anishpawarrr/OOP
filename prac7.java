@@ -9,6 +9,11 @@ public class prac7 {
         for(int i=0;i<4;i++){
             System.out.println(ar.get(i).data);
         }
+        ArrayList<Integer> it = e.inte(ar);
+        System.out.println("fdgdyt");
+        for(int i=0;i<it.size();i++){
+            System.out.println(it.get(i));
+        }
 
     }
     public static void add(ArrayList<String> a){
